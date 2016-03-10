@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+}
+@font-face {
+    font-family: 'sosa';
+    src: url("../fonts/sosa-regular-webfont.eot");
+    src: url("../fonts/sosa-regular-webfont.eot?iefix") format('eot'),
+    url("../fonts/sosa-regular-webfont.woff") format('woff'),
+    url("../fonts/sosa-regular-webfont.ttf") format('truetype'),
+    url("../fonts/sosa-regular-webfont.svg#webfont") format('svg');
+}
+#contenido{
+    min-height: 100%;
+}
+#misredes a{
+    font-family: sosa;
+    text-decoration: none;
+    font-size: 4em;
+    letter-spacing: 1em;
+    color: black;
+    transition: color 1s;
+}
+#misredes a:hover{
+    color:#5AADC9
+}
+header#tituloweb{
+    width:100%;
+    background: #5AADC9;
+    font-size:1.7em;
+    color:white;
+    text-indent: 1em;
+    position:fixed;
+    padding:0.3em 1em;
+}
+.titulo2{
+    width: 100%;
+    background: #5AADC9; 
+    color: white;
+    font-size:  1.5em;
+}
+
+body{margin:0;padding:0;}
+.hamburger{
+    position:fixed;
+    background-color:transparent;
+    left:0;
+    top:-5px;
+    height:30px;
+    width:30px;
+    padding:20px 20px;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index:1002;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+.hamburger.is-active{
+    background-color:none;
+}
+._layer{
+    background:#333333;
+    margin-bottom:4px;
+    border-radius:2px;
+    width:28px;
+    height:4px;
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+    -webkit-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+    -webkit-transform:translateY(100%);
+    -ms-transform:translateY(100%);
+    transform:translateY(100%);
+}
+.hamburger.is-active .-top{
+    -webkit-transform:translateY(200%) rotate(45deg) !important;
+    -ms-transform:translateY(200%) rotate(45deg) !important;
+    transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+    opacity:0;
+}
+.hamburger.is-active .-bottom{
+    -webkit-transform:translateY(-200%) rotate(135deg) !important;
+    -ms-transform:translateY(-200%) rotate(135deg) !important;
+    transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+    transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+    background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+    margin:0;padding:0;
+}
+.menuppal ul li {
+    list-style: none;
+    text-align:center;
+    font-family: Verdadna, Arial, Helvetica;
+    color: $nav-color-text;
+    font-size:1.5rem;
+    line-height:3em;
+    height:3em;
+    color:#369;
+    text-transform:none;
+    font-weight:bold;
+}
+.menuppal ul li a{
+    text-decoration:none;
+    color:#369;
+}
+.menuppal ul li a:hover{
+    text-decoration:none;
+    color:#333;
+}
+.icon{
+    font-size: 1em;
+    transition: color 1s;
+}
+.icon:hover{
+    color:black;
+}
+#imagen{
+    display: none;
+}
+ main #quiensoy{
+        width:100%;
+        background: #FF8C94;
+        color:white;
+    }
+    main #quiensoy img{
+        width: 100%;
+    }
+ main #mishabilidades{
+        background: #FCF38D;
+        
+    }
+main #mishabilidades #descripcion{
+    padding: 0 0.5em;
+    text-align: justify;
+}
+    main #mishabilidades img {
+        width:100%;
+    }
+@media screen and (min-width:600px){
+   
+    main #quiensoy{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: row;
+    }
+    section{
+        width:90%;
+        margin: 0 auto;
+    }
+    main #quiensoy #mifoto{
+        width:50%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    main #quiensoy #divDescripcion{
+        width: 50%;
+        margin: 1em auto;
+        font-size: 1.2em;
+    }
+   
+   
+   
+    .icon{
+        display:none;
+    }
+    #imagen{
+        width:100%;
+        display: block;
+    }
+    #imagen img{
+        width: 100%;
+    }
+}
